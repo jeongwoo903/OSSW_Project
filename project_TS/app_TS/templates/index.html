@@ -1,12 +1,35 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OSSW_TS</title>
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    test
+    <section id="border_line">
+        <div class="content_box">
+            <div class="desc_box">
+                <h1 class="title">[ OSSW ] Retranslation Service</h1>
+                <p class="desc">번역을 다시 번역해주는 즉, 재번역 서비스 입니다~</p>
+            </div>
+            <div class="input">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input class="input_text" type="text" required minlength="1">
+                </form>
+            </div>
+            <div class="output_ts">
+                <div class="show_output_ts"></div>
+            </div>
+            <div class="output_tts">
+                <div class="show_output_tts"></div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../static/script.js"></script> -->
 </body>
 </html>

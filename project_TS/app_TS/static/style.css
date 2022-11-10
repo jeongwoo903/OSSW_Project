@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #36D1DC; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body #border_line {
+  border: 2px solid white;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+}
+body #border_line .content_box {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+body #border_line .content_box .desc_box .title {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  text-shadow: 0 7px 10px rgba(0, 0, 0, 0.392);
+}
+body #border_line .content_box .desc_box .desc {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 7px 10px rgba(0, 0, 0, 0.392);
+}
+body #border_line .content_box .input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.392);
+  width: 364px;
+  height: 40px;
+  border-radius: 30px;
+}
+body #border_line .content_box .input input {
+  margin-left: 20px;
+  font-size: 19px;
+  width: 314px;
+  border: none;
+}
+body #border_line .content_box .input button {
+  width: 20px;
+  height: 20px;
+}
