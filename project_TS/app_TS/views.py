@@ -18,6 +18,7 @@ def translate(input_text):
     translator = Translator()
     text_mid = translator.translate(input_text, dest='en')
     text_last = translator.translate(text_mid.text, dest='ko')
+
     return {
         'text_first':{'lang':text_mid.src, 'text':text_mid.origin},
         'text_mid':{'lang':text_mid.dest, 'text':text_mid.text},
