@@ -12,6 +12,8 @@ def home(request):
         if result_post == "테스트":
             return render(request, 'result_ex.html', result_translation)
 
+        return render(request, 'index.html', result_translation)
+
     return render(request, 'index.html')
 
 def translate(input_text):
