@@ -18,7 +18,7 @@
             <div class="input">
                 <form method="POST">
                     {% csrf_token %}
-                    <input class="input_text" type="text" required minlength="1">
+                    <input name="input_text" class="input_text" type="text" required minlength="1">
                 </form>
             </div>
             <div class="output_ts">
