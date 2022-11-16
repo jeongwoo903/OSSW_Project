@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from googletrans import Translator
 
+
 def home(request):
     if request.method == 'POST':
         result_post = request.POST.get('input_text')
@@ -16,13 +17,14 @@ def home(request):
 
     return render(request, 'index.html')
 
+
 def translate(input_text):
     translator = Translator()
     text_mid = translator.translate(input_text, dest='en')
     text_last = translator.translate(text_mid.text, dest='ko')
 
     return {
-        'text_first':{'lang':text_mid.src, 'text':text_mid.origin},
-        'text_mid':{'lang':text_mid.dest, 'text':text_mid.text},
-        'text_last':{'lang':text_last.dest, 'text':text_last.text}
+        'text_first': {'lang': text_mid.src, 'text': text_mid.origin},
+        'text_mid': {'lang': text_mid.dest, 'text': text_mid.text},
+        'text_last': {'lang': text_last.dest, 'text': text_last.text}
     }

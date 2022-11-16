@@ -11,25 +11,44 @@
 <body>
     <section id="border_line">
         <div class="content_box">
+            <div class="top_bar">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
             <div class="desc_box">
-                <h1 class="title">[ OSSW ] Retranslation Service</h1>
+                <h1 class="title">Retranslation Service</h1>
                 <p class="desc">번역을 다시 번역해주는 즉, 재번역 서비스 입니다~</p>
             </div>
-            <div class="input">
+            <div class="box input">
+                <select name="language">
+                    <option>EN</option>
+                    <option>JP</option>
+                    <option>CH</option>
+                </select>
                 <form method="POST">
                     {% csrf_token %}
-                    <input name="input_text" class="input_text" type="text" required minlength="1">
+                    <input value="{{text_first.text}}" placeholder="아무거나 입력해주세요." autocomplete="off" name="input_text" class="input_text" type="text" required minlength="1">
                 </form>
             </div>
-            <div class="output_ts">
-                <div class="show_output_ts"></div>
+            <div class="box output_ts">
+                <div class="show_output_ts">
+                    <p class="ts_tag">변역   |</p>
+                    {{text_mid.text}}
+                </div>
             </div>
-            <div class="output_tts">
-                <div class="show_output_tts"></div>
+            <div class="box output_tts">
+                <div class="show_output_tts">
+                    <p class="ts_tag">재변역   |</p>
+                    {{text_last.text}}
+                </div>
             </div>
         </div>
+        <footer>[ OSSW / CSE1019 ] Made by 장정우 / 김이삭 / 안상민</footer>
     </section>
-    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../static/script.js"></script> -->
 </body>
+<script>
+    // const getFormElem = 
+
+</script>
 </html>
