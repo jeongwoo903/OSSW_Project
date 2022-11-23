@@ -1,0 +1,153 @@
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@font-face {
+  font-family: "SF_HambakSnow";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  background: linear-gradient(-45deg, #000000, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+body #border_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+}
+body #border_line .content_box {
+  display: flex;
+  position: absolute;
+  height: inherit;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  background: #303030;
+  height: 534px;
+  border-radius: 11px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7333333333);
+  border: 1px solid rgba(202, 202, 202, 0.5411764706);
+  padding: 40px 0;
+}
+body #border_line .content_box .top_bar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: 40px;
+  border-radius: 9.9px 9.9px 0 0;
+}
+body #border_line .content_box .top_bar .circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+body #border_line .content_box .top_bar :first-child {
+  background-color: rgb(206, 78, 68);
+}
+body #border_line .content_box .top_bar :nth-child(2) {
+  background-color: rgb(245, 189, 79);
+}
+body #border_line .content_box .top_bar :nth-child(3) {
+  background-color: rgb(97, 196, 82);
+}
+body #border_line .content_box .desc_box .title {
+  font-family: "SF_HambakSnow";
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  text-shadow: 0 3px 2px rgb(0, 0, 0);
+  text-align: center;
+}
+body #border_line .content_box .desc_box .desc {
+  color: white;
+  text-align: center;
+  text-shadow: 0 3px 2px rgb(0, 0, 0);
+}
+body #border_line .content_box .box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgb(0, 0, 0);
+  width: 364px;
+  min-height: 40px;
+  border-radius: 10px;
+}
+body #border_line .content_box .box select {
+  outline: none;
+  border: none;
+  margin-left: 5px;
+}
+body #border_line .content_box .box input {
+  margin: 0 10px;
+  font-size: 16px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+body #border_line .content_box .box button {
+  width: 20px;
+  height: 20px;
+}
+body #border_line .content_box .box > div {
+  margin: 0 10px;
+  padding: 15px 0;
+}
+body #border_line .content_box .box > div > p {
+  font-size: 13.33px;
+  font-weight: 600;
+  display: inline;
+}
+body #border_line .content_box .input {
+  margin-top: 59px;
+}
+body #border_line footer {
+  position: absolute;
+  font-weight: 300;
+  bottom: 0;
+  margin-bottom: 10px;
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
