@@ -23,12 +23,14 @@
             <div class="box input">
                 <form method="POST">
                     {% csrf_token %}
-                    <select name="language">
-                        <option>EN</option>
-                        <option>JP</option>
-                        <option>CH</option>
-                    </select>
-                    <input value="{{text_first.text}}" placeholder="아무거나 입력해주세요." autocomplete="off" name="input_text" class="input_text" type="text" required minlength="1">
+                    <div class="cover">
+                        <select name="language">
+                            <option>EN</option>
+                            <option>JP</option>
+                            <option>CH</option>
+                        </select>
+                        <input value="{{text_first.text}}" placeholder="아무거나 입력해주세요." autocomplete="off" name="input_text" class="input_text" type="text" required minlength="1">
+                    </div>
                 </form>
             </div>
             <div class="box output_ts">

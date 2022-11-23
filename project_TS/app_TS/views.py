@@ -22,7 +22,8 @@ def translate(input_data):
     language_list = {'EN': 'en', 'JP': 'ja', 'CH': 'zh-cn'}
 
     translator = Translator()
-    text_mid = translator.translate(input_text, dest=language_list[mid_language])
+    text_mid = translator.translate(
+        input_text, dest=language_list[mid_language])
     text_last = translator.translate(text_mid.text, dest=text_mid.src)
 
     return {
