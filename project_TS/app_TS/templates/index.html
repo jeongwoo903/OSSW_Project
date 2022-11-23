@@ -21,13 +21,13 @@
                 <p class="desc">번역을 다시 번역해주는 즉, 재번역 서비스 입니다~</p>
             </div>
             <div class="box input">
-                <select name="language">
-                    <option>EN</option>
-                    <option>JP</option>
-                    <option>CH</option>
-                </select>
                 <form method="POST">
                     {% csrf_token %}
+                    <select name="language">
+                        <option>EN</option>
+                        <option>JP</option>
+                        <option>CH</option>
+                    </select>
                     <input value="{{text_first.text}}" placeholder="아무거나 입력해주세요." autocomplete="off" name="input_text" class="input_text" type="text" required minlength="1">
                 </form>
             </div>
