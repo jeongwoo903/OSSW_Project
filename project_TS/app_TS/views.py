@@ -11,9 +11,6 @@ def home(request):
         print("[debug] POST 언어:", result_post.get('language'))
         print("[debug] 번역 결과:", result_translation)
 
-        if result_post == "테스트":
-            return render(request, 'result_ex.html', result_translation)
-
         return render(request, 'index.html', result_translation)
 
     return render(request, 'index.html')
