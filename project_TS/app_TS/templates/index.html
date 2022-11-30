@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSSW_TS</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}?after">
+</head>
+<body>
+    <section id="border_line">
+        <div class="content_box">
+            <div class="top_bar">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="desc_box">
+                <h1 class="title">Retranslation Service</h1>
+                <p class="desc">번역을 다시 번역해주는 즉, 재번역 서비스 입니다~</p>
+            </div>
+            <div class="box input">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="cover">
+                        <select name="language">
+                            <option>EN</option>
+                            <option>JP</option>
+                            <option>CH</option>
+                        </select>
+                        <input value="{{text_first.text}}" placeholder="아무거나 입력해주세요." autocomplete="off" name="input_text" class="input_text" type="text" required minlength="1">
+                    </div>
+                </form>
+            </div>
+            <div class="box output_ts">
+                <div class="show_output_ts">
+                    <p class="ts_tag">변역   |</p>
+                    {{text_mid.text}}
+                </div>
+            </div>
+            <div class="box output_tts">
+                <div class="show_output_tts">
+                    <p class="ts_tag">재변역   |</p>
+                    {{text_last.text}}
+                </div>
+            </div>
+        </div>
+        <footer>[ OSSW / CSE1019 ] Made by 장정우 / 김이삭 / 안상민</footer>
+    </section>
+</body>
+<script>
+    // const getFormElem = 
+
+</script>
+</html>
