@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% for game in discount_game_list %}
+    <p>
+        <img src="{{game.header_image}}"> <br>
+        appid : {{ game.appid }} <br>
+        name : {{ game.name }} <br>
+        header_image : {{ game.header_image }} <br>
+        price : {{ game.price }} <br>
+        initialprice : {{ game.initialprice }} <br>
+        discount : {{ game.discount }}
+    </p>
+{% endfor %}
+</body>
+</html>
