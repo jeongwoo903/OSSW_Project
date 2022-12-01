@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>[OSSW] Steam Sale</title>
+</head>
+<body>
+    <section>
+        <h1 class="title">STEAM SALE</h1>
+        <p class="info">현재 스팀에서 할인중인 게임 목록입니다.</p>
+        <p class="info">[ OSSW / CSE1019 ] Made by 장정우 / 김이삭 / 안상민</p>
+        <div class="game_board">
+            {% for game in discount_game_list %}
+                <div class="games">
+                    <h2>{{ game.name }}</h2>
+                    <img src="{{game.header_image}}">
+                    <div class="price_info">
+                        <div class="sale_info">
+                            <p>₩{{ game.price }}</p> 
+                            <div class="percent">{{ game.discount }}%</div>
+                        </div>
+                        <p class="init_price">₩{{ game.initialprice }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <script src="../static/script.js"></script>
+</body>
+</html>
+
