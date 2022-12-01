@@ -1,0 +1,103 @@
+@font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    background-color: black;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 11rem;
+
+        .title {
+            font-family:'bitbit';
+            font-size: 5rem;
+            color: white;
+        }
+
+        .info {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: white;
+        }
+
+        .game_board {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 3.5rem;
+            gap: 1.5rem;
+
+            .games {
+                height: fit-content;
+                width: 16rem;
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                background-color: white;
+                box-shadow: 0 0 1rem rgb(255 255 255 / 94%);
+                border-radius: .4rem;
+
+                h2 {
+                    font-size: 1.3rem;
+                    margin: .5rem;
+                    text-align: center;
+                }
+
+                img {
+                    margin: 0 0 .55rem 0;
+                    width: 16rem;
+                }
+
+                .price_info {
+                    display: flex;
+                    width: inherit;
+                    align-items: flex-end;
+                    flex-direction: column;
+
+                    .sale_info {
+                        width: inherit;
+                        font-size: 1rem;
+                        display: flex;
+                        justify-content: flex-end;
+                        display: flex;
+                        align-items: center;
+    
+                        p {
+                            margin-right: .75rem;
+                        }
+    
+                        .percent {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgb(211 53 112);
+                            padding: .35rem;
+                            border-radius: .25rem;
+                            color: white;
+                            margin-right: .8rem;
+                        }
+                    }
+                    .init_price {
+                        display: flex;
+                        font-size: 1rem;
+                        justify-content: flex-end;
+                        flex-direction: column;
+                        margin: .3rem .8rem .3rem 0;
+                        color: gray;
+                        text-decoration: line-through;
+                        font-family: initial;
+                    }
+                }
+            }
+        }
+    }
+}
