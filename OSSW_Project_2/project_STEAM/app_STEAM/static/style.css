@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "bitbit";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"), url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  background-color: black;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11rem;
+}
+body section .title {
+  font-family: "bitbit";
+  font-size: 5rem;
+  color: white;
+}
+body section .info {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: white;
+}
+body section .game_board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 3.5rem;
+  gap: 1.5rem;
+}
+body section .game_board .games {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.94);
+  border-radius: 0.4rem;
+}
+body section .game_board .games h2 {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+body section .game_board .games img {
+  margin: 0 0 0.55rem 0;
+  width: 16rem;
+}
+body section .game_board .games .price_info {
+  display: flex;
+  width: inherit;
+  align-items: flex-end;
+  flex-direction: column;
+}
+body section .game_board .games .price_info .sale_info {
+  width: inherit;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+body section .game_board .games .price_info .sale_info p {
+  margin-right: 0.75rem;
+}
+body section .game_board .games .price_info .sale_info .percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 53, 112);
+  padding: 0.35rem;
+  border-radius: 0.25rem;
+  color: white;
+  margin-right: 0.8rem;
+}
+body section .game_board .games .price_info .init_price {
+  display: flex;
+  font-size: 1rem;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0.3rem 0.8rem 0.3rem 0;
+  color: gray;
+  text-decoration: line-through;
+  font-family: initial;
+}
