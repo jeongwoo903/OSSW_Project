@@ -5,6 +5,10 @@
 > 오픈소스SW기초(CSE1019) 과목에서 진행한 팀프로젝트 입니다.  
 > 이 프로젝트는 엉뚱하고 쓸데없어 보이지만, 그렇기에 사용자들이 재미있게 사용하기를 바라는 마음으로 제작된 프로젝트 입니다.
 
+## 프로젝트 보고서
+![Project #1](https://github.com/jeongwoo903/OSSW_Project/blob/main/OSSW_Project_1/project_TS/README.md)
+![Project #2](https://github.com/jeongwoo903/OSSW_Project/blob/main/OSSW_Project_2/README.md)
+
 ## 사용 예제
 
 ### Project #1 - Retranslation Service
