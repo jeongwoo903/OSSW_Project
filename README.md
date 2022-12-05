@@ -11,13 +11,13 @@
 
 > 번역한 문장을 다시 재번역 해주는 서비스 입니다.
 
-![project_1](./image/project_1.png)
+![project_1](./IMG/project_1.png)
 
 ### Project #2 - Steam Sale
 
 > 스팀 게임사이의 할인 정보를 불러와 주는 서비스 입니다.
 
-![project_2](./image/project_2.png)
+![project_2](./IMG/project_2.png)
 
 ## 실행 전 요구사항
 
