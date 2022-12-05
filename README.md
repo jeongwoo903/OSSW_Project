@@ -57,8 +57,11 @@ cd OSSW_Project_2/project_TS/
 ```
 python3 manage.py runserver
 ```
+## 작업내역(Insight)
+[Github Insight](https://github.com/jeongwoo903/OSSW_Project/network)
+ 참고
 
-## 라이센스
+## 라이센스(License)
 
 > NOTICE 폴더 참고
 
