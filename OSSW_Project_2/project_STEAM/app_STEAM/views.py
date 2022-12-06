@@ -30,6 +30,7 @@ def process_game_information():
                 'appid': i,
                 'name': data['name'],
                 'header_image': data['header_image'],
+                # String slicing was performed to remove the currency symbol.
                 'price': data_price['final_formatted'][2:],
                 'initialprice': data_price['initial_formatted'][2:],
                 'discount': data_price['discount_percent']
