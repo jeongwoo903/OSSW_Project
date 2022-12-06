@@ -1,0 +1,2 @@
+# Add to exclude python cache files from git
+*.pyc
