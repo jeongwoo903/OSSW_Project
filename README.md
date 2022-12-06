@@ -7,7 +7,7 @@
 
 ## 프로젝트 보고서
 - [Project #1](https://github.com/jeongwoo903/OSSW_Project/blob/main/OSSW_Project_1/project_TS/README.md)   
-- [Project #2](https://github.com/jeongwoo903/OSSW_Project/blob/main/OSSW_Project_2/README.md)
+- [Project #2](https://github.com/jeongwoo903/OSSW_Project/blob/main/OSSW_Project_2/project_STEAM/README.md)
 
 ## 사용 예제
 
