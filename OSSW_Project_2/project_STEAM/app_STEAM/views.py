@@ -24,14 +24,15 @@ def process_game_information():
             datas_steam_raw = json_steam.get("https://store.steampowered.com/api/appdetails?appids=" + i)
             datas_steam = json.loads(datas_steam_raw.text)
             data = datas_steam[i]['data']
+            data_price = data['price_overview']
 
             temp = {
                 'appid': i,
                 'name': data['name'],
                 'header_image': data['header_image'],
-                'price': data['price_overview']['final_formatted'][2:],
-                'initialprice': data['price_overview']['initial_formatted'][2:],
-                'discount': data['price_overview']['discount_percent']
+                'price': data_price['final_formatted'][2:],
+                'initialprice': data_price['initial_formatted'][2:],
+                'discount': data_price['discount_percent']
             }
             discount_game_list.append(temp)
 
