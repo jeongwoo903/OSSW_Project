@@ -21,7 +21,10 @@ def process_game_information():
     for i in datas_steamspy:
         if int(datas_steamspy[i]['discount']) != 0:
             # steam api reference : https://stackoverflow.com/questions/46330864/steam-api-all-games
-            datas_steam_raw = json_steam.get("https://store.steampowered.com/api/appdetails?appids=" + i)
+            datas_steam_raw = json_steam.get(
+                "https://store.steampowered.com/api/appdetails?appids="
+                + i
+            )
             datas_steam = json.loads(datas_steam_raw.text)
             data = datas_steam[i]['data']
             data_price = data['price_overview']
