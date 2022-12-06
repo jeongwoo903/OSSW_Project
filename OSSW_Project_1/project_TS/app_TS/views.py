@@ -7,10 +7,6 @@ def home(request):
         result_post = request.POST
         result_translation = translate(result_post)
 
-        print("[debug] POST 결과 (입력):", result_post.get('input_text'))
-        print("[debug] POST 언어:", result_post.get('language'))
-        print("[debug] 번역 결과:", result_translation)
-
         return render(request, 'index.html', result_translation)
 
     return render(request, 'index.html')

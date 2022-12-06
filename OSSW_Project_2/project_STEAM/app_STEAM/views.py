@@ -6,7 +6,6 @@ import json
 def home(request):
     discount_game_list = process_game_information()
     data = {'discount_game_list': discount_game_list}
-    print("[debug] discount_game_list:", discount_game_list)
 
     return render(request, 'index.html', data)
 
@@ -16,13 +15,11 @@ def process_game_information():
     json_steamspy = requests_cache.CachedSession('cache_json_steamspy')
     json_steam = requests_cache.CachedSession('cache_json_steam')
     datas_steamspy_raw = json_steamspy.get("https://steamspy.com/api.php?request=top100in2weeks")
-    print("[debug] steamspy json 로드 시 캐시 사용 여부:", datas_steamspy_raw.from_cache)
     datas_steamspy = json.loads(datas_steamspy_raw.text)
 
     for i in datas_steamspy:
         if int(datas_steamspy[i]['discount']) != 0:
             datas_steam_raw = json_steam.get("https://store.steampowered.com/api/appdetails?appids=" + i)
-            print("[debug]", i + "번째 게임 steam json 로드 시 캐시 사용 여부:", datas_steam_raw.from_cache)
             datas_steam = json.loads(datas_steam_raw.text)
             data = datas_steam[i]['data']
 
