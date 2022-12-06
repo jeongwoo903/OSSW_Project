@@ -4,7 +4,7 @@
 # 프로젝트 2 사용 기술 및 흐름
 프로젝트 1과 같이 프론트엔드는 HTML과 SCSS, 백엔드는 python 기반의 웹프레임워크인 장고(django)를 사용하였습니다.
    
-스팀에 있는 게임과 관련된 정보는 steam 공식 REST API와 steamspy 사이트 REST API를 사용하였습니다. 파이썬에서 REST API를 호출할 때는 requests, requests_cache라는 오픈소스 라이브러리를 사용하였습니다.
+스팀에 있는 게임과 관련된 정보는 [steam 공식 REST API](https://stackoverflow.com/questions/46330864/steam-api-all-games)와 [steamspy 사이트 REST API](http://steamspy.com/api.php)를 사용하였습니다. 파이썬에서 REST API를 호출할 때는 requests, requests_cache라는 오픈소스 라이브러리를 사용하였습니다.
    
 프로젝트 2 서비스의 전체적인 작동 흐름은 다음과 같습니다.
    
