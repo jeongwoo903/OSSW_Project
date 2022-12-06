@@ -34,8 +34,11 @@
 - [requests-cache](https://pypi.org/project/requests-cache/)
 
 ```
-pip3 install
-pip3 install googletrans requests requests-cache
+// Project #1
+pip3 install googletrans
+
+// Project #2
+pip3 install requests requests-cache
 ```
 
 ## 실행 방법
@@ -65,7 +68,7 @@ python3 manage.py runserver
 [Github Insight](https://github.com/jeongwoo903/OSSW_Project/network)
  참고
 
-## 라이센스(License)
+## 사용 라이브러리 라이센스(License)
 
 > NOTICE 폴더 참고
 
