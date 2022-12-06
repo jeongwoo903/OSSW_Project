@@ -19,7 +19,9 @@ def translate(input_data):
 
     translator = Translator()
     text_mid = translator.translate(
-        input_text, dest=language_list[mid_language])
+        input_text, 
+        dest=language_list[mid_language]
+    )
     text_last = translator.translate(text_mid.text, dest=text_mid.src)
 
     return {
